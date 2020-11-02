@@ -1,7 +1,0 @@
-description: [ponzawaのスキルと作品を紹介します。]
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-theme: jekyll-theme-minimal
