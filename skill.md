@@ -1,5 +1,5 @@
 ---
-title: スキル | ponzawa - Portfolio
+title: スキル
 ---
 # 見出し１
 

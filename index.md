@@ -1,5 +1,5 @@
 ---
-title: ホーム | ponzawa - Portfolio
+title: ホーム
 ---
 ## Welcome to GitHub Pages
 
