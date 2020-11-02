@@ -14,11 +14,11 @@
   <body>
     {% include nav.html %}
     <div class="wrapper mt-5">
-      <header class="mb-2">
+      <header class="pb-2">
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-        <h2>@ponzawa (Twitter: @ponzawa_)</h2>
+        <h2 class="pb-2">@ponzawa</h2>
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
