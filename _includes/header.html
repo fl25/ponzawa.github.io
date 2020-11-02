@@ -1,19 +1,25 @@
 <header>
-  <nav>
-    <ul>
-      {% for item in site.data.navi %}
-        <li>
-          <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <a href="{{ '/' | relative_url }}" class="navbar-brand">ponzawa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        {% for item in site.data.navi %}
+          <li class="nav-item">
+            <a class={% if page.url == item.link %}"nav-link active"{% else %}"nav-link"{% endif %} href="{{ item.link | relative_url }}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/ponzawa"><i class="fab fa-github menu-icon" title="Github"></i></a>
         </li>
-      {% endfor %}
-    </ul>
-    <ul>
-      <li>
-        <a href="https://github.com/ponzawa">github</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/ponzawa_">twitter</a>
-      </li>
-    </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/ponzawa_"><i class="fab fa-twitter menu-icon" title="Twitter"></i></a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
