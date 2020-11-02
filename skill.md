@@ -1,12 +1,12 @@
 ---
 title: スキル
 ---
-# 見出し１
+## 見出し１
 
 + typescript
 + react
 
-# 見出し２
+## 見出し２
 
 ``` HelloWorld.ts
 const hello = 'Hello World!'
