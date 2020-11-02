@@ -2,7 +2,6 @@
 title: WEBサイト
 ---
 ## WEBサイト作品集
-{{ site.time | date_to_string }}
 <ul>
   {% for post in site.posts %}
     <li>
