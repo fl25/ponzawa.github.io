@@ -9,8 +9,7 @@
         <ul class="navbar-nav mr-auto">
           {% for item in site.data.navi %}
             <li class="nav-item">
-              <!-- <a class={% if page.url == item.link %}"nav-link active"{% else %}"nav-link"{% endif %} href="{{ item.link | relative_url }}">{{ item.name }}</a> -->
-              <a href="{{ item.link | relative_url }}" class="btn">{{ item.name }}</a>
+              <a class={% if page.url == item.link %}"nav-link active"{% else %}"nav-link"{% endif %} href="{{ item.link | relative_url }}">{{ item.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -20,9 +19,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://twitter.com/ponzawa_"><i class="fab fa-twitter menu-icon" title="Twitter"></i></a>
-          </li>
-          <li>
-            <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
           </li>
         </ul>
       </div>
