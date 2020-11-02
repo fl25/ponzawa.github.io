@@ -1,0 +1,19 @@
+<header>
+  <nav>
+    <ul>
+      {% for item in site.data.navi %}
+        <li>
+          <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li>
+        <a href="https://github.com/ponzawa">github</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/ponzawa_">twitter</a>
+      </li>
+    </ul>
+  </nav>
+</header>
